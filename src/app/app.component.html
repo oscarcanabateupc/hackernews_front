@@ -1,2 +1,6 @@
 <app-header></app-header>
-<p *ngFor="let new_entry of news_entries">aaaa</p>
+<p *ngFor="let contribution of contributions">
+    <button>upvote</button>
+    <a href={{contribution.url}} class="titlelink"> {{contribution.title}}>
+    <p>{{contribution.points}} points by {{contribution.user_id}} at {{contribution.created_at}} 0 comments
+

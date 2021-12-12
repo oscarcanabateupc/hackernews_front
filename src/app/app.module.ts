@@ -3,18 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NewsEntryComponent } from './news-entry/news-entry.component';
 import { HeaderComponent } from './header/header.component';
+import { CommentComponent } from './comment/comment.component';
+import { UserComponent } from './user/user.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewsEntryComponent,
-    HeaderComponent
+    HeaderComponent,
+    CommentComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
