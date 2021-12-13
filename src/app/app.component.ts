@@ -16,6 +16,6 @@ export class AppComponent {
   constructor(private contributionService:ContributionsService){}
 
   ngOnInit():void {
-    this.contributionService.get_news_entries().subscribe((contributions) => (this.contributions = contributions));
+    this.contributionService.get_contributions().subscribe((contributions) => (this.contributions = contributions));
   }
 }
